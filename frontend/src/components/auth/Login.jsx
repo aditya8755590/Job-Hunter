@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../shared/Navbar";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
+
 import { Button } from "../ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -77,10 +77,10 @@ const Login = () => {
               placeholder="Enter your password"
             />
           </div>
-          <div className="flex items-center justify-between">
-            <RadioGroup className="flex items-center gap-4 my-5">
-              <div className="flex items-center space-x-2">
-                <Input
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center gap-4 my-5">
+              <label className="flex items-center gap-2">
+                <input
                   type="radio"
                   name="role"
                   value="student"
@@ -88,10 +88,10 @@ const Login = () => {
                   onChange={changeEventHandler}
                   className="cursor-pointer"
                 />
-                <Label htmlFor="r1">Student</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Input
+                Student
+              </label>
+              <label className="flex items-center gap-2">
+                <input
                   type="radio"
                   name="role"
                   value="recruiter"
@@ -99,9 +99,9 @@ const Login = () => {
                   onChange={changeEventHandler}
                   className="cursor-pointer"
                 />
-                <Label htmlFor="r2">Recruiter</Label>
-              </div>
-            </RadioGroup>
+                Recruiter
+              </label>
+            </div>
           </div>
           {loading ? (
             <Button className="w-full my-4">
