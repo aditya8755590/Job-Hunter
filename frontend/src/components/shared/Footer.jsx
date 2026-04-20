@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <h2 className="text-xl font-bold">Job Hunt</h2>
             <p className="text-sm">
-              © 2024 Arun.webcode. All Rights Reserved.{" "}
+              © 2026 Job.Portal. All Rights Reserved.{" "}
             </p>
           </div>
 
