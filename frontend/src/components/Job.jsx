@@ -9,10 +9,10 @@ const Job = () => {
   const navigate = useNavigate();
   const jobId = "qwsdfgfwasdfgbfrdef"
   return (
-    <div className="p-5 rounded-md shadow-xl bg-white border border-gray-100">
+    <div className="p-5 rounded-md shadow-xl bg-white border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:border-gray-200 hover:-translate-y-1">
       <div className="flex items-center justify-between">
         <p className="text-sm text-gray-500">2 days ago</p>
-        <Button variant="outline" className="rounded-full" size="icon">
+        <Button variant="outline" className="rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" size="icon">
           <Bookmark />
         </Button>
       </div>

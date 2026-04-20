@@ -22,9 +22,9 @@ const Navbar = () => {
         {/* Navigation + Auth */}
         <div className="flex items-center gap-12">
           <ul className="flex font-medium items-center gap-5">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/jobs">Jobs</Link></li>
-            <li><Link to="/browse">Browse</Link></li>
+            <li><Link to="/" className="hover:text-[#F83002] transition-colors duration-200">Home</Link></li>
+            <li><Link to="/jobs" className="hover:text-[#F83002] transition-colors duration-200">Jobs</Link></li>
+            <li><Link to="/browse" className="hover:text-[#F83002] transition-colors duration-200">Browse</Link></li>
           </ul>
 
           {!user ? (
@@ -68,12 +68,12 @@ const Navbar = () => {
                   </div>
 
                   <div className="flex flex-col my-2 text-gray-600">
-                    <div className="flex w-fit items-center gap-2 cursor-pointer">
+                    <div className="flex w-fit items-center gap-2 cursor-pointer hover:text-[#6A38C2] transition-colors duration-200">
                       <User2 />
                       <Button variant="link"><Link to="/profile">View Profile</Link></Button>
                     </div>
 
-                    <div className="flex w-fit items-center gap-2 cursor-pointer">
+                    <div className="flex w-fit items-center gap-2 cursor-pointer hover:text-red-500 transition-colors duration-200">
                       <LogOut />
                       <Button variant="link">LogOut</Button>
                     </div>
